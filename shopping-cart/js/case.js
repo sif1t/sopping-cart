@@ -27,8 +27,10 @@ function updateCaseNumber(isIncraese){
 
  document.getElementById("btn-case-plus").addEventListener("click", function(){
     const newCaseNumber =  updateCaseNumber(true);
-    const NewCasePrice = 59;
-    const caseTotal = newCaseNumber * NewCasePrice;
+   
+    const caseTotalPrice = newCaseNumber * 59;
+    const caseTotalElement = document.getElementById("case-totla");
+    caseTotalElement.innerText = caseTotalPrice;
  });
 
     document.getElementById("btn-case-minus").addEventListener("click", function(){
