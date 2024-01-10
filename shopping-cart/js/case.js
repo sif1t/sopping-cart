@@ -34,6 +34,7 @@ function updateCaseNumber(isIncraese){
     const newCaseNumber =  updateCaseNumber(true);
 
     updateCaseTotalPrice(newCaseNumber);
+    calculatSubTotal();
    
     
  });
@@ -42,6 +43,7 @@ function updateCaseNumber(isIncraese){
          const newCaseNumber = updateCaseNumber(false);
           
          updateCaseTotalPrice(newCaseNumber);
+         calculatSubTotal();
     });
 
 

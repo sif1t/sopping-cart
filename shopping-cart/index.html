@@ -27,11 +27,11 @@
 
                      <div class="col-md-5 center-item">
                         <div class="input-group number-spinner">
-                           <button class="btn btn-default"><i class="fas fa-minus"></i></button>
-                           <input type="number" min="0" class="form-control text-center" value="1">
-                           <button class="btn btn-default"><i class="fas fa-plus"></i></button>
+                           <button id="btn-phone-minus" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                           <input id="phone-number-field" type="number" min="0" class="form-control text-center" value="1">
+                           <button id="btn-phone-plus" class="btn btn-default"><i class="fas fa-plus"></i></button>
                         </div>
-                        <h5>$1219</h5>
+                        <h5>$<span id="phone-total">0</span></h5>
                         <img src="images/remove.png" alt="" class="remove-item">
                      </div>
                   </div>
@@ -50,7 +50,7 @@
                            <button id="btn-case-plus"  class="btn btn-default"><i class="fas fa-plus"></i></button>
 
                         </div>
-                        <h5>$ <span id="case-totla">59</span></h5>
+                        <h5>$<span id="case-totla">59</span></h5>
                         <img src="images/remove.png" alt="" class="remove-item">
                      </div>
                   </div>
@@ -66,9 +66,9 @@
                      </div>
 
                      <div class="col-md-4 status">
-                        <h5>$1,278</h5>
-                        <h5>$0</h5>
-                        <h5>$1,278</h5>
+                        <h5>$<span id="sub-total">0</span></h5>
+                        <h5>$<span id="tax-amount">0</span></h5>
+                        <h5>$<span id="fianl-total">1,278</span></h5>
                      </div>
                   </div>
                </div>
@@ -81,7 +81,10 @@
    </section>
 
   <!-- link js  -->
+  <script src="js/common.js"></script>
   <script src="js/case.js"></script>
+  <script src="js/phone.js"></script>
+
 </body>
 
 </html>
